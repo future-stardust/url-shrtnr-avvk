@@ -5,13 +5,13 @@ fulfill/rewrite this document (at least, replace everything in `{...}`).
 
 ## Students group
 
-- {Surname Name (in Ukrainian)} {email}
+- Фурман Костянтин furman0507@gmail.com
 - ...
 - {Surname Name (in Ukrainian)} {email}
 
 ## Design document
 
-The [design document]({Place actual link to the design document Google Docs file here}) that
+The [design document](https://docs.google.com/document/d/17F_FMZhUvmu3EBEdh_BQffSw3PQLrqE_VN5msPsBN9A/edit#heading=h.k57aj13un2t) that
 describes architecture and implementation details of this project.
 
 ### System structure
