@@ -1,4 +1,4 @@
-# {Team Name} - URL shortener {🧪}
+# AVVK - URL shortener {🧪}
 
 This is a template project for "Software testing" course labs. Use it to create your own repo and 
 fulfill/rewrite this document (at least, replace everything in `{...}`).
@@ -6,8 +6,10 @@ fulfill/rewrite this document (at least, replace everything in `{...}`).
 ## Students group
 
 - Фурман Костянтин furman0507@gmail.com
-- ...
-- {Surname Name (in Ukrainian)} {email}
+- Тимко Андрій andeyka.tima@gmail.com
+- Шаляпін Віктор v.shalyapin3323@gmail.com
+- Яворський Іван 02ivan0971@gmail.com
+
 
 ## Design document
 
