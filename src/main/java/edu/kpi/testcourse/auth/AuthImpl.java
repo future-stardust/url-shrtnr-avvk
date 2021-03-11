@@ -1,19 +1,23 @@
 package edu.kpi.testcourse.auth;
 
-public class AuthImpl implements Auth{
-  // todo
+import edu.kpi.testcourse.bigtable.BigTable;
+import javax.inject.Inject;
 
-  public void createUser(String email, String pass){ }
+public class AuthImpl implements Auth {
+
+
+  public void createUser(String email, String pass) {
+  }
 
   public boolean userExist(String email) {
     return false;
   }
 
-  public String userLogin(String email, String pass){
+  public String userLogin(String email, String pass) {
     return "token";
   }
 
-  public boolean userLogined(String email){
+  public boolean userLogined(String email) {
     return false;
   }
 

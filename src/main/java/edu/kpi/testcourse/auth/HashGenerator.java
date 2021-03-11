@@ -5,6 +5,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class HashGenerator {
 
+
   public String generate(String password) {
     String generatedPassword = null;
     try {
