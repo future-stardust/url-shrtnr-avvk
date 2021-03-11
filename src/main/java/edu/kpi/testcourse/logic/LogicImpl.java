@@ -6,7 +6,7 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 
 @Singleton
-public class Logic {
+public class LogicImpl implements Logic {
   @Inject
   private final BigTable bigtable;
 
@@ -15,7 +15,7 @@ public class Logic {
 
   int defaultUserId = 1;
 
-  public Logic(BigTable bigtable){
+  public LogicImpl(BigTable bigtable){
     this.bigtable = bigtable;
   }
 
