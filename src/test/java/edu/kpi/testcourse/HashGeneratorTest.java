@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class HashGeneratorTest {
+
+
   @Test
   void testHashMd5() {
     String password = "12345";
