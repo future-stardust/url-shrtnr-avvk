@@ -3,6 +3,7 @@ package edu.kpi.testcourse.logic;
 import java.util.Random;
 
 public class LinkGenerator {
+
   int targetStringLength = 8;
 
   String randomString() {
@@ -24,7 +25,7 @@ public class LinkGenerator {
     return randomString();
   }
 
-  public String generate(){
+  public String generate() {
     return randomString();
   }
 }

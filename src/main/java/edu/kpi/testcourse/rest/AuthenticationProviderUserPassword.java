@@ -23,14 +23,14 @@ public class AuthenticationProviderUserPassword implements AuthenticationProvide
 
   @Override
   public Publisher<AuthenticationResponse> authenticate(
-      @Nullable HttpRequest<?> httpRequest,
-      AuthenticationRequest<?, ?> authenticationRequest
+    @Nullable HttpRequest<?> httpRequest,
+    AuthenticationRequest<?, ?> authenticationRequest
   ) {
     // TODO Here you need to implement an actual authentication (ensure that the user is registered
     //  and password is OK)
     return Flowable.create(emitter -> {
       if (authenticationRequest.getIdentity().equals("sherlock")
-          && authenticationRequest.getSecret().equals("password")) {
+        && authenticationRequest.getSecret().equals("password")) {
         emitter
           .onNext(new UserDetails((String) authenticationRequest.getIdentity(), new ArrayList<>()));
         emitter.onComplete();
