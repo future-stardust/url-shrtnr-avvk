@@ -1,6 +1,7 @@
 package edu.kpi.testcourse.models;
 
 public class AuthToken {
+
   private int userId;
   private String authToken;
 

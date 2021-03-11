@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class BigTableImpl implements BigTable {
+
   private final String jsonFileExtension = ".json";
   private final String userFileExtension = ".usr";
   private final String rootPath = "./.data";

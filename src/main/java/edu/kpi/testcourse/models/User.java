@@ -1,6 +1,7 @@
 package edu.kpi.testcourse.models;
 
 public class User {
+
   private int userId;
   private String email;
   private String userPassHash;
@@ -10,7 +11,9 @@ public class User {
     this.userPassHash = userPassHash;
   }
 
-  public int getUserId() {return userId;}
+  public int getUserId() {
+    return userId;
+  }
 
   public String getEmail() {
     return email;
