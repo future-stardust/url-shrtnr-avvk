@@ -9,6 +9,7 @@ import javax.inject.Singleton;
 
 @Singleton
 class LogicImpl implements Logic {
+
   @Inject
   private final BigTable bigtable;
 
@@ -17,38 +18,38 @@ class LogicImpl implements Logic {
 
   int defaultUserId = 1;
 
-  public LogicImpl(BigTable bigtable){
+  public LogicImpl(BigTable bigtable) {
     this.bigtable = bigtable;
   }
 
-  public void createUser(String email, String pass){
-    if (!this.auth.userExist(email)){
+  public void createUser(String email, String pass) {
+    if (!this.auth.userExist(email)) {
       this.auth.createUser(email, pass);
     }
   }
 
-  public String signInUser(String email, String pass){
-    if (!this.auth.userLogined(email)){
+  public String signInUser(String email, String pass) {
+    if (!this.auth.userLogined(email)) {
       return this.auth.userLogin(email, pass);
+    } else {
+      return "";
     }
-    else{
-    return "";}
   }
 
-  public void createAlias(String link, String alias){
+  public void createAlias(String link, String alias) {
     this.bigtable.putAlias(defaultUserId, link, alias);
   }
 
-  public void createAlias(String link){
+  public void createAlias(String link) {
     String alias = new LinkGenerator().generate();
     this.bigtable.putAlias(defaultUserId, link, alias);
   }
 
-  public void deleteAlias(String alias){
+  public void deleteAlias(String alias) {
     this.bigtable.deleteAlias(alias);
   }
 
-  public String redirect(String alias){
+  public String redirect(String alias) {
     UserLink link = this.bigtable.getLink(alias);
     return link.getRedirectLink();
   }
