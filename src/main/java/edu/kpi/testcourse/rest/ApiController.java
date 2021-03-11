@@ -38,7 +38,7 @@ public class ApiController {
   }
 
   @Post(value = "/urls/shorten")
-  public String addAlias(String url, Optional<String> alias) {
+  public HttpResponse addAlias(String url, Optional<String> alias) {
     // ToDo implement
     return HttpResponse.status(HttpStatus.NOT_IMPLEMENTED);
   }
